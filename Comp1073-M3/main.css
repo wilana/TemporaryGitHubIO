@@ -36,7 +36,7 @@ h3 {
 }
 
 footer {
-	position: fixed;
+	position: sticky;
 	bottom: 0;
 	width: 100%;
 	text-align: right;

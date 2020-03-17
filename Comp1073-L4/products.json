@@ -27,10 +27,10 @@
             "image" : "images/pizzahat.jpg"
           },
 		  {
-            "name" : "Puff-N-Fluff",
-            "price" : 39.95,
-            "details" : "Reduces wet dog odor, dries your dog after a rainy day walk and warms your dog after a cold winter walk.", 
-            "image" : "pizza-1.jpg"
+            "name" : "Pool Bull",
+            "price" : 34.50,
+            "details" : "Bring the excitement of the rodeo right to your pool. Bull float offers endless fun and laughs while the outer ring ensures safety and balance.", 
+            "image" : "images/poolbull.jpeg"
           }
         ]
       }

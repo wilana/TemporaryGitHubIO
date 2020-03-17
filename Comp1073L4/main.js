@@ -7,16 +7,16 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-  let plentyPizza = request.response;
-  console.log(plentyPizza); 
-  pizzaTypes(plentyPizza); 
+  let productsList = request.response;
+  console.log(productsList); 
+  productsDisplay(productsList); 
 };
 
-function pizzaTypes(jsonObj) {
+function productsDisplay(jsonObj) {
   
-  let pizzaTypes = jsonObj.pizzaTypes; 
+  let products = jsonObj.products; 
   
-  for(let i = 0; i < pizzaTypes.length; i++) {
+  for(let i = 0; i < products.length; i++) {
     
     //build HTML elements for the content 
     let article = document.createElement('article');
@@ -24,25 +24,18 @@ function pizzaTypes(jsonObj) {
     let img = document.createElement('img');
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
-    let ul = document.createElement('ul');
 
     let section = document.querySelector('section'); 
-    img.setAttribute('src', 'https://jessicagilfillan.github.io/JSON/assets/' + pizzaTypes[i].image); 
-    img.setAttribute('alt', pizzaTypes[i].image); 
-    h2.textContent = pizzaTypes[i].name; 
-    p1.textContent = 'Price ' + pizzaTypes[i].price;
-    p2.textContent = 'Size ' + pizzaTypes[i].size;
-    let toppings = pizzaTypes[i].toppings; 
-    for (let j = 0; j < toppings.length; j++) {
-      let listItem = document.createElement('li'); 
-      listItem.textContent = toppings[j]; 
-      ul.appendChild(listItem); 
-    }
+    img.setAttribute('src', 'https://wilana.github.io/Comp1073L4/images/' + products[i].image); 
+    img.setAttribute('alt', products[i].image); 
+    h2.textContent = products[i].name; 
+    p1.textContent = 'Price ' + products[i].price;
+    p2.textContent = 'Size ' + products[i].size;
+
     article.appendChild(img);
     article.appendChild(h2);
     article.appendChild(p1); 
     article.appendChild(p2);
-    article.appendChild(ul); 
     section.appendChild(article);
 
   }

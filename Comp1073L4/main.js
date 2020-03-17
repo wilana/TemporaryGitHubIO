@@ -1,5 +1,5 @@
 // JavaScript Document
-let requestURL = 'https://wilana.github.io/Comp1073-L4/products.json';
+let requestURL = 'https://wilana.github.io/Comp1073L4/products.json';
 // new XHR object, grabs things from the server without refresh 
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);

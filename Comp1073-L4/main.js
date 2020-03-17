@@ -11,11 +11,12 @@ request.send();
 // 3) function to access info from server with URL and callback function
 request.onload = function() {
 	let productsList = request.response;
-	products(productsList);
+	productsDisplay(productsList);
+	
 }
 
 // 4) Callback function to access info using jsonObj and displays
-function products(jsonObj) {
+function productsDisplay(jsonObj) {
 	let products = jsonObj.products;
 	
 	for (let i = 0; i < products.length; i++) {

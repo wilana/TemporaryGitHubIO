@@ -1,0 +1,36 @@
+// JSON Document
+{
+      "products": [
+          {
+            "name" : "Puff-N-Fluff",
+            "price" : 39.95,
+            "details" : "Reduces wet dog odor, dries your dog after a rainy day walk and warms your dog after a cold winter walk.", 
+            "image" : "images/dogdryer.jpg"
+          },
+        
+          {
+           "name" : "Pet Wig",
+            "price" : 9.57,
+            "details" : "Every member of the family can dress up all year long! Dogs will be ready for parades, parties, or just having fun.", 
+            "image" : "images/petwig.jpg" 
+          },
+          {
+            "name" : "Pickle Lip Balm",
+            "price" : 11.95,
+            "details" : "This hilarious pickle gift is a lip-smacker you won’t be able to get enough of, and we’re not gherkin your chain!", 
+            "image" : "images/picklebalm.jpg"
+          },
+		  {
+            "name" : "Pizza Hat",
+            "price" : 11.62,
+            "details" : "Finally, you can indulge in everyone's life-long desire of wearing pizza atop their head. Beware the sprinkled parmesan as you nod or shake your head, though—some might mistake it for dandruff.", 
+            "image" : "images/pizzahat.jpg"
+          },
+		  {
+            "name" : "Puff-N-Fluff",
+            "price" : 39.95,
+            "details" : "Reduces wet dog odor, dries your dog after a rainy day walk and warms your dog after a cold winter walk.", 
+            "image" : "pizza-1.jpg"
+          }
+        ]
+      }

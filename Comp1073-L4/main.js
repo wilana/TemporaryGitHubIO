@@ -26,7 +26,7 @@ function products(jsonObj) {
 		let pricePara = document.createElement('p');
 		let detailsPara = document.createElement('p');
 		
-		let parentDiv = document.getElementById('productsExamples');
+		let parentDiv = document.getElementById('productsList');
 		productDiv.className = 'productEntry';
 		
 		// update content of Elements with product info

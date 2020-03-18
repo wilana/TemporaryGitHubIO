@@ -1,20 +1,19 @@
 // JavaScript Document
 let requestURL = 'https://wilana.github.io/Comp1073L4/products.json';
-// new XHR object, grabs things from the server without refresh 
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
-request.responseType = 'json'; 
+request.responseType = 'json';
 request.send();
 
+// get response
 request.onload = function() {
   let productsList = request.response;
-  console.log(productsList); 
-  productsDisplay(productsList); 
-};
+  showProducts(productsList);
+}
 
-function productsDisplay(jsonObj) {
+function showProducts(jsonObj) {
   
-  let products = jsonObj.products; 
+  let products = jsonObj['products']; 
   
   for(let i = 0; i < products.length; i++) {
     

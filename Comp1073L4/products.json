@@ -1,7 +1,7 @@
 // JSON Document
 {
 	//Object called Products
-      var products = [
+      products = [
 		  // Index 0 of the array:
           {
 			  //Object for an individual product

@@ -1,13 +1,17 @@
 // JSON Document
 {
-      "products": [
+	//Object called Products
+      var products = [
+		  // Index 0 of the array:
           {
+			  //Object for an individual product
             "name" : "Puff-N-Fluff",
             "price" : 39.95,
             "details" : "Reduces wet dog odor, dries your dog after a rainy day walk and warms your dog after a cold winter walk.", 
             "image" : "images/dogdryer.jpg"
           },
         
+		  //Index 2 of the array
           {
            "name" : "Pet Wig",
             "price" : 9.57,
@@ -32,5 +36,5 @@
             "details" : "Bring the excitement of the rodeo right to your pool. Bull float offers endless fun and laughs while the outer ring ensures safety and balance.", 
             "image" : "images/poolbull.jpeg"
           }
-        ]
+        ];
       }

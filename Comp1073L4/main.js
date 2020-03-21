@@ -1,21 +1,35 @@
 // JavaScript Document
-let requestURL = 'https://wilana.github.io/Comp1073L4/products.json';
-let request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
+var xmlhttp = new XMLHttpRequest(),
+  method = 'GET',
+  url = 'https://wilana.github.io/Comp1073L4/products.json';
 
-// get response
-request.onload = function() {
-  let productsList = request.response;
+xmlhttp.open(method, url, true);
+xmlhttp.onload = function () {
+   let productsList = (xmlhttp.response);
   showProducts(productsList);
-}
+};
+xmlhttp.send();
+
+
+
+
+//let requestURL = 'wilana.github.io/Comp1073L4/products.json';
+//let request = new XMLHttpRequest();
+//request.open('GET', requestURL);
+//request.responseType = 'json';
+//request.send();
+//
+//// get response
+//request.onload = function() {
+//  let productsList = request.response;
+//  showProducts(productsList);
+//}
 
 function showProducts(jsonObj) {
-  
-  let products = jsonObj['products']; 
-  
-  for(let i = 0; i < products.length; i++) {
+	let products = jsonObj["products"]; 
+	
+	
+	for(let i = 0; i < products.length; i++){
     
     //build HTML elements for the content 
     let article = document.createElement('article');

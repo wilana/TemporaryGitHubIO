@@ -1,15 +1,46 @@
 /* CSS Document */
 
+/*
+	BASIC STYLES
+*/
+body {
+	font-family: 'Playfair Display', serif;
+}
 header, footer {
 	background-color: #2E3532;
 	color: white;
 	padding: 1em;
+}
+footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+	padding: 1em;
+}
+
+footer p {
+	font-size: .75em;
+	padding: 0;
+	margin: 0;
+	
+}
+
+/*
+	ARTICLE STYLING
+*/
+article {
+	margin: 2em;
+	border-bottom: 3px double darkgreen;
+	padding: 3em;
 }
 .articleInfo {
 	font-size: 1em;
 	width: 60%;
 	margin: auto;
 }
+
+/*	IMAGE */
 
 img {
 	max-width: 50%;
@@ -18,11 +49,7 @@ img {
 	border: 1px solid darkgreen;
 }
 
-article {
-	margin: 2em;
-	border-bottom: 3px double darkgreen;
-	padding: 3em;
-}
+/*	DETAILS: */
 .detailsSection {
 	width: 80%;
 	margin: auto;
@@ -37,19 +64,4 @@ article {
 	align-self: center;
 	text-align: left;
 	padding: 0 10%;
-}
-
-footer {
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	text-align: right;
-	padding: 1em;
-}
-
-footer p {
-	font-size: .75em;
-	padding: 0;
-	margin: 0;
-	
 }

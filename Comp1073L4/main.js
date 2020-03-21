@@ -2,10 +2,11 @@
 let request = new XMLHttpRequest();
 let url = 'https://wilana.github.io/Comp1073L4/products.json';
 
-request.open('GET', url, true);
+request.open('GET', url);
 request.send();
+
 request.onload = function () {
-   let myObj = JSON.parse(request.response);
+   let myObj = request.response;
 	console.log(myObj)
   showProducts(myObj);
 };

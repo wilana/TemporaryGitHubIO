@@ -1,7 +1,8 @@
 // JSON Document
 {
-	//Object called Products
-      products = [
+	myObject = {
+	//Array called Products
+      "products" : [
 		  // Index 0 of the array:
           {
 			  //Object for an individual product
@@ -36,5 +37,6 @@
             "details" : "Bring the excitement of the rodeo right to your pool. Bull float offers endless fun and laughs while the outer ring ensures safety and balance.", 
             "image" : "images/poolbull.jpeg"
           }
-        ];
-      }
+        ]
+	};
+}

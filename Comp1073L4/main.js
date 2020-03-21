@@ -5,8 +5,8 @@ var xmlhttp = new XMLHttpRequest(),
 
 xmlhttp.open(method, url, true);
 xmlhttp.onload = function () {
-   let productsList = (xmlhttp.response);
-  showProducts(productsList);
+   let myObj = (xmlhttp.response);
+  showProducts(myObj);
 };
 xmlhttp.send();
 

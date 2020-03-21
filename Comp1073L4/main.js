@@ -1,14 +1,14 @@
 // JavaScript Document
-var xmlhttp = new XMLHttpRequest(),
-  method = 'GET',
-  url = 'https://wilana.github.io/Comp1073L4/products.json';
+let request = new XMLHttpRequest();
+let url = 'https://wilana.github.io/Comp1073L4/products.json';
 
-xmlhttp.open(method, url, true);
-xmlhttp.onload = function () {
-   let myObj = (xmlhttp.response);
+request.open('GET', url, true);
+request.onload = function () {
+   let myObj = (request.response);
+	console.log(myObj)
   showProducts(myObj);
 };
-xmlhttp.send();
+request.send();
 
 
 

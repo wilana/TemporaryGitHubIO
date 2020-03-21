@@ -1,2 +1,55 @@
 /* CSS Document */
 
+header, footer {
+	background-color: #2E3532;
+	color: white;
+	padding: 1em;
+}
+.articleInfo {
+	font-size: 1em;
+	width: 60%;
+	margin: auto;
+}
+
+img {
+	max-width: 50%;
+	padding: 1%;
+	background-color: darkseagreen;
+	border: 1px solid darkgreen;
+}
+
+article {
+	margin: 2em;
+	border-bottom: 3px double darkgreen;
+	padding: 3em;
+}
+.detailsSection {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 10% 90%;
+	background-color: darkseagreen;
+	border: 1px solid darkgreen;
+	padding: 3%;
+}
+
+.detailsLabel, .detailsContent {
+	align-self: center;
+	text-align: left;
+	padding: 0 10%;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+	padding: 1em;
+}
+
+footer p {
+	font-size: .75em;
+	padding: 0;
+	margin: 0;
+	
+}

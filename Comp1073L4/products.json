@@ -1,6 +1,5 @@
 // JSON Document
 {
-	myObject = {
 	//Array called Products
       "products" : [
 		  // Index 0 of the array:
@@ -38,5 +37,4 @@
             "image" : "images/poolbull.jpeg"
           }
         ]
-	};
 }

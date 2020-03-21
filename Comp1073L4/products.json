@@ -36,5 +36,5 @@
             "details" : "Bring the excitement of the rodeo right to your pool. Bull float offers endless fun and laughs while the outer ring ensures safety and balance.", 
             "image" : "images/poolbull.jpeg"
           }
-        ]
+        ] //end array
 }

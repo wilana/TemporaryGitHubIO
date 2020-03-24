@@ -72,17 +72,22 @@ async function showProducts (url, type) {
 			section.appendChild(article);
 		}
 	} catch (error) {
+		//describe error to console
 		console.log(error);
 		
+		//Let user know there was an issue
+		// Create and edit elements
 		let errorH2 = document.createElement('h2');
 		let errorPara = document.createElement('p');
 		errorH2.textContent = 'Sorry!';
 		errorPara.textContent = 'It looks like we couldn\'t load this content.';
 
+		//Append elements to the page
 		let section = document.querySelector('section');
 		section.appendChild(errorH2);
 		section.appendChild(errorPara);
 	}
 };
 	
+//Call the showProducts function that will call the loadAsset function
 showProducts('https://wilana.github.io/Comp1073L4/products.json', 'json');

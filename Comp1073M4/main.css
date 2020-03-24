@@ -29,6 +29,9 @@ footer p {
 /*
 	ARTICLE STYLING
 */
+section {
+	margin: 3em;
+}
 article {
 	margin: 2em;
 	border-bottom: 3px double darkgreen;
